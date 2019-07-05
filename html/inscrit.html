@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <title></title>
     <link rel="stylesheet" href="../css/inscrit.css" />
+    <script src="../js/inscrit.js"></script>
 </head>
 
 <body>
@@ -15,7 +16,7 @@
     </header>
 
     </header>
-    <form name="f" methode="post" action="">
+    <form name="f" methode="post" action="connection.html">
         <table>
             nom:<input type="text" name="nom" /><br> prénom:
             <input type="text" name="pre" /><br> date de naissance:<input type="date" name="date" /><br> nationalité:
@@ -28,14 +29,14 @@
             <input type="radio" name="s" required class="m">masculin<br>
             <input type="radio" name="s" required class="m">feminin<br>
             <input type="radio" name="s" required class="m">autre<br> niveau en devloppement:<br>
-            <input type="checkbox" name="" class="">niveau débutant <br>
-            <input type="checkbox" name="" class="">niveau intermidiare <br>
-            <input type="checkbox" name="" class="">niveau avancé <br> biographie<br>
-            <textarea rows="5" cols="20">
+            <input type="checkbox" name="x" class="">niveau débutant <br>
+            <input type="checkbox" name="x1" class="">niveau intermidiare <br>
+            <input type="checkbox" name="x2" class="">niveau avancé <br> biographie<br>
+            <textarea name="text" rows="5" cols="20">
  
  </textarea><br> E-mail
             <input type="email" name="e" /><br> Mot de passe<input type="password" name="pss" /><br>
-            <a href="connection.html"><input type="button" value="inscrit" class="x" /></a>
+            <input type="submit" value="inscrit" class="x" onclick="verif()" />
         </table>
     </form>
 </body>
