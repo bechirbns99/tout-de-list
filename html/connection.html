@@ -5,10 +5,7 @@
     <meta charset="UTF-8" />
     <title>connexion</title>
     <link rel="stylesheet" href="../css/home.css" />
-    <script>
-        x=document.f.email.value;
-
-
+    <script src="../js/con.js">
     </script>
 </head>
 
@@ -18,7 +15,7 @@
         <a href="connection.html"><input type="button" name="connexion" value="connexion" class="t" /></a>
         <a href="inscrit.html"><input type="button" name="inscrit" value="inscrit" class="x" /></a>
     </header>
-    <form name="f" method="POST " action="" class="f">
+    <form name="f" method="POST " action="accueil.html" class="f">
         <label>
             <table class="tab" >
                 <tr>
@@ -31,7 +28,7 @@
          </label></tr>
         </table>
         <br>
-        <a href="accueil.html"> <input type="button" value="connexion" class="cnx" /></a>
+        <input type="submit" value="connexion" class="cnx" onclick="verif()" /></a>
     </form>
 </body>
 

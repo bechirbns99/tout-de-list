@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title></title>
     <link rel="stylesheet" href="../css/inscrit.css" />
     <script src="../js/inscrit.js"></script>
@@ -11,34 +12,48 @@
 <body>
     <header>
         <a href="home.html"><img src="../img/log.jpg" alt="logo  " class="s" /></a>
-        <a href="connection.html"><input type="button" name="connexion" value="connexion" class="t" /></a>
-        <a href="inscrit.html"><input type="button" name="inscrit" value="inscrit" class="x" /></a>
+        <a href="connection.html"><input type="button" name="connexion" value="connexion" class="btn btn-primary" /></a>
+        <a href="inscrit.html"><input type="button" name="inscrit" value="inscrit" class="btn btn-success" /></a>
     </header>
 
     </header>
-    <form name="f" methode="post" action="connection.html">
-        <table>
-            nom:<input type="text" name="nom" /><br> prénom:
-            <input type="text" name="pre" /><br> date de naissance:<input type="date" name="date" /><br> nationalité:
-            <select name="nat"><br>
+    <form name="f" method="POST" action="../php/getform.php " class=" form-group ">
+
+        nom:<input type="text " name="nom" class="form-control " /><br> prénom:
+        <input type="text " name="pre" class="form-control " /><br> date de naissance:
+        <input type="date" name="date" />
+        <br> cin: <input type="text " name="cin" class="form-control " /><br> nationalité:
+        <select name="nat" class="custom-select "><br>
+            <option selected >Select nat</option>
  <option value="fr">francaise</option>
  <option value="ang">anglaise</option>
  <option value="tun">tunisienne</option>
  </select><br> genre:
-            <br>
-            <input type="radio" name="s" required class="m">masculin<br>
-            <input type="radio" name="s" required class="m">feminin<br>
-            <input type="radio" name="s" required class="m">autre<br> niveau en devloppement:<br>
-            <input type="checkbox" name="x" class="">niveau débutant <br>
-            <input type="checkbox" name="x1" class="">niveau intermidiare <br>
-            <input type="checkbox" name="x2" class="">niveau avancé <br> biographie<br>
-            <textarea name="text" rows="5" cols="20">
+        <br>
+        <div>
+            <input type="radio" name="s" required value="masculin " class="m ">masculin<br>
+            <input type="radio" name="s" required value="feminin " class="m ">feminin<br>
+            <input type="radio" name="s" required value="autre " class="m ">autre<br>
+
+        </div> niveau en devloppement:<br>
+        <div>
+            <input type="checkbox" name="niv" value="débutant " class=" ">niveau débutant <br>
+            <input type="checkbox" name="niv" value="intermidiare " class=" ">niveau intermidiare <br>
+            <input type="checkbox" name="niv" value="avancé " class=" ">niveau avancé <br> biographie<br>
+        </div>
+        <textarea name="text" rows="5 " cols="20 ">
  
  </textarea><br> E-mail
-            <input type="email" name="e" /><br> Mot de passe<input type="password" name="pss" /><br>
-            <input type="submit" value="inscrit" class="x" onclick="verif()" />
-        </table>
+        <input type="email " name="e" class="form-control " id="email " /><br> Mot de passe<input type="password" name="pwd" class="form-control " id="pwd " /><br>
+        <input type="submit" value="inscrit " class="x " onclick="verif() " />
+
     </form>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
 </body>
 
 </html>
