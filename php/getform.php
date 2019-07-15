@@ -24,5 +24,5 @@ $ins-> bio = $bio;
 $ins-> email = $email;
 $ins-> pwd = $pwd;
 $ins-> insertion();
-header('location: http://localhost/bootcamp%20web/tout-de-list/html/connection.html')
+header('location: http://localhost/bootcamp%20web/tout-de-list/html/connection.html');
 ?>

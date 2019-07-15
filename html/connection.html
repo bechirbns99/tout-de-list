@@ -15,15 +15,15 @@
         <a href="connection.html"><input type="button" name="connexion" value="connexion" class="t" /></a>
         <a href="inscrit.html"><input type="button" name="inscrit" value="inscrit" class="x" /></a>
     </header>
-    <form name="f" method="POST " action="accueil.html" class="f">
+    <form name="f" method="GET" action="../php/validiation.php" class="f">
         <label>
             <table class="tab" >
                 <tr>
-     <td>E-mail:</td>  <td><input type="email" name="email" placeholder="Entrer votre email" required></td> 
+     <td>E-mail:</td>  <td><input type="email" name="em" placeholder="Entrer votre email" required></td> 
     </label></tr>
         <tr>
             <label>
-            <td>Mot de passe:</td><td><input type="password" name="pwd" placeholder="Entrer votre password"/></td>
+            <td>Mot de passe:</td><td><input type="password" name="pw" placeholder="Entrer votre password" required/></td>
 
          </label></tr>
         </table>
